@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>specific-page</title>
+    <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../sp.css"> 
+</head>
+
+<body>
+    <header class="navi-contain">
+        <div class="navi">
+            <div class="left-navi">
+                <img src="../fonts/fonts/city.svg" class="navi-img">
+                <span>浙江省</span>
+            </div>
+            <div class="right-navi">
+                <a class="navi-button" href="../../index_start.html" >历史馆</a>
+                <a class="navi-button" href="../../gallery.html">热门词云</a>
+                <a class="navi-button" href="../../general.html">远景规划</a>
+                <a class="navi-button active" href="../../China.html" >具体省份</a>
+                <a class="navi-button" href="../../contact.html">联系我们</a>
+            </div>
+        </div>
+    </header>
+
+    <aside class="left-father">
+        <div class="left-box">
+            <div class="left-title">
+                规划方向
+            </div>
+            <a href="sp-zj-ecosys.html" class="left-button"><img src="../fonts/fonts/ecnomic.svg" 
+                    class="left-img"><span class="label">生态环境</span>
+            </a>
+            <a href="sp-zj-talent.html" class="left-button left-button-point"><img src="../fonts/fonts/knowledge.svg"
+                    class="left-img"><span class="label">人才发展</span>
+            </a>
+            <a href="sp-zj-highschool.html" class="left-button"><img src="../fonts/fonts/public-service.svg"
+                    class="left-img"><span class="label">高等教育</span>
+            </a>
+            <a href="sp-zj-consumeUp.html" class="left-button"><img src="../fonts/fonts/ecnomic.svg"
+                    class="left-img"><span class="label">消费升级</span>
+            </a>
+            <a href="sp-zj-antidisaster.html" class="left-button"><img src="../fonts/fonts/health.svg"
+                    class="left-img"><span class="label">防震减灾</span>
+            </a>
+            <a href="sp-zj-river.html" class="left-button"><img src="../fonts/fonts/health.svg" class="left-img"><span
+                    class="label">河流治理</span>
+            </a>
+        </div>
+    </aside>
+    <main class="right-box">
+        <div class="right-top-box">
+            <h4 style="color:#012970">人才发展</h4>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#" class="bread-a">主页</a></li>
+                  <li class="breadcrumb-item"><a href="#" class="bread-a">具体省份</a></li>
+                  <li class="breadcrumb-item"><a href="#" class="bread-a">浙江省</a></li>
+                  <li class="breadcrumb-item active" aria-current="page" style="color:#51678f">人才发展</li>
+                </ol>
+            </nav>
+            <div class="card-2">
+                <h4 class="top-card-title">
+                    人才发展
+                    <span class="top-card-span">|浙江</span>
+                </h4>
+                <p class="top-card-p">
+                    坚持以习近平新时代中国特色社会主义思想为指导，深入贯彻党的十九大和十九届二中、三中、四中、五中全会精神，落实省委十四届五次、六次、七次、八次、九次全会精神，忠实践行“八八战略”，奋力打造“重要窗口”，坚持党管人才原则，围绕把握新发展阶段、贯彻新发展理念、构建新发展格局、推动高质量发展，落实创新在现代化建设全局中的核心地位，以全面数字化改革为引领，以建设高素质强大人才队伍为主题，以全方位引进、培养、用好人才为主线，以引领发展、成就人才为根本目的，坚持系统观念，运用系统方法，聚焦聚力人才谱系丰富多彩、人才生态迭代升级、人才队伍集聚裂变，着力构建党建统领、整体智治、精准赋能、唯实惟先的人才工作新格局，加快打造具有影响力吸引力的全球人才蓄水池，率先建成人才强省，为争创社会主义现代化先行省提供人才支撑，为建设人才强国贡献浙江力量。
+               <a href="http://www.zj.gov.cn/art/2021/7/7/art_1229203592_2310438.html">查看更多</a>
+                </p>
+            </div>
+        </div>
+        <div class="right-bottom-box">
+            <div class="card-1" id="bar">
+
+            </div>
+            
+
+            
+            <div class="card-1" id="bar2">
+
+            </div>
+            
+        </div>
+    </main>
+    </div>
+
+    <script src="../echarts.min.js"></script>
+
+    <script src="../button.js">
+    </script>
+
+    <script src=""></script>
+    <script>
+        var chartDom = document.getElementById('bar');
+        var myChart = echarts.init(chartDom);
+        var option;
+
+        option = {
+            // 很奇怪嗷 雷达图的颜色智能在这变化 不在legend里面的itemstyle变化
+            color: ['#0f58a2', '#33ccff', '#0e43bc'],
+            title: {
+                text: '重点数据变化'
+            },
+            legend: {
+                itemWidth: 30,
+                data: ['变化'],
+                selectedMode: 'single',
+            },
+            radar: {
+                indicator: [
+                    { name: '经营管理人才', max: 360 },
+                    { name: '专业技术人才', max: 610 },
+                    { name: '高技能人才)', max: 312.8 },
+                    { name: '农村实用人才', max: 123 },
+                    { name: '社会工作专业人才', max: 9.8 }
+                ],
+                axisName: {
+                    fontSize: 27,
+                },
+                radius: 210,
+
+            },
+            series: [
+                {
+                    name: 'Budget vs spending',
+                    type: 'radar',
+
+                    label: {
+                        show: true,
+                        color: "#0f58a2",
+                        fontSize: 17,
+                    },
+                    lineStyle: {
+                        color: "#0f58a2",
+                        width: 5,
+                    },
+                    itemStyle: {
+                        borderColor: "#0f58a2"
+                    },
+                    symbolSize: 7,
+                    data: [
+                        {
+                            value: [20, 70, 72.8, 17, 2.2],
+                            // 
+                            // [77.56, 23.6, 16.84, 5.22, 16.95]
+                            name: '变化',
+                            areaStyle: {
+                                color: '#0f58a2'
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+        option && myChart.setOption(option);
+
+        var chartDom2 = document.getElementById('bar2');
+        var myChart2 = echarts.init(chartDom2);
+        var option2;
+        option2 = {
+            series: [
+                {
+                    type: 'treemap',
+                    left: "18%",
+                    right: "18%",
+                    color: [
+                        '#049afb',
+                        '#00ccff',
+                        '#ffcc66',
+                        '#3cb973',
+                        '#99ff66'
+                    ],
+                    itemStyle: {
+                        borderWidth: 1,
+                        gapWidth: 1,
+                        borderColor: '#fff',
+                    },
+                    colorMappingBy: 'id',
+                    data: [
+                        {
+                            name: '人才总量',
+                            id: 1,
+                            value: 7,
+                            children: [
+                                {
+                                    name: '人才资源总量',
+                                    value: 1,
+                                    id: 1,
+                                },
+                                {
+                                    name: '党政人才',
+                                    value: 1,
+                                    id: 1,
+                                },
+                                {
+                                    name: '经营管理人才',
+                                    value: 1,
+                                    id: 1,
+                                },
+                                {
+                                    name: '专业基数人才',
+                                    value: 1,
+                                    id: 1,
+                                },
+                                {
+                                    name: '高技能人才',
+                                    value: 1,
+                                    id: 1,
+                                },
+                                {
+                                    name: '农村实用人才',
+                                    value: 1,
+                                    id: 1,
+                                },
+                                {
+                                    name: '社会工作专业人才',
+                                    value: 1,
+                                    id: 1,
+                                }
+                            ]
+                        },
+                        {
+                            name: '人才结构',
+                            value: 2,
+                            id: 2,
+                            children: [
+                                {
+                                    name: '万名劳动力中研发人员数量	',
+                                    value: 1,
+                                    id: 2,
+                                },
+                                {
+                                    name: '专业技术人才高级职称比例',
+                                    value: 1,
+                                    id: 2,
+                                },
+                                {
+                                    name: '三大科创高地高层次人才比例',
+                                    value: 1,
+                                    id: 2,
+                                },
+                                {
+                                    name: '高技能人才占技能人才比例',
+                                    value: 1,
+                                    id: 2,
+                                },
+                            ]
+                        },
+                        {
+                            name: '人才效能和环境',
+                            value: 4,
+                            id: 3,
+                            children: [
+                                {
+                                    name: '	科技贡献率',
+                                    value: 1,
+                                    id: 3,
+                                },
+                                {
+                                    name: '每万人高价值发明专利拥有量',
+                                    value: 1,
+                                    id: 3,
+                                },
+                                {
+                                    name: '高新技术产业增加值占规上工业比重',
+                                    value: 1,
+                                    id: 3,
+                                },
+                                {
+                                    name: '全员劳动生产率年均增长',
+                                    value: 1,
+                                    id: 3,
+                                },
+                                {
+                                    name: '人力资本投资占地区生产总值比例',
+                                    value: 1,
+                                    id: 3,
+                                },
+                            ]
+                        },
+                       
+                            
+                        
+                    ]
+                }
+            ]
+        }
+        option2 && myChart2.setOption(option2);
+    </script>
+
+
+</body>
+
+</html>
