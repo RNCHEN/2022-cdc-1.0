@@ -603,3 +603,7 @@ https://blog.csdn.net/qq_43202474/article/details/109101323
 使用这个完成数据传输
 
 ![image-20220413141102393](https://raw.githubusercontent.com/RNCHEN/photo-326/master/blogImg/image-20220413141102393.png)
+
+很有意思的爬虫问题
+
+![image-20220418133635514](https://raw.githubusercontent.com/RNCHEN/photo-326/master/blogImg/image-20220418133635514.png)
