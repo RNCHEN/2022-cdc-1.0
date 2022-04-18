@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>specific-page</title>
+    <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../sp.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="navi-contain">
+        <div class="navi">
+            <div class="left-navi">
+                <img src="../fonts/fonts/city.svg" class="navi-img">
+                <span>上海市</span>
+            </div>
+            <div class="right-navi">
+                <a class="navi-button" href="../../index_start.html" >历史馆</a>
+                <a class="navi-button" href="../../gallery.html">热门词云</a>
+                <a class="navi-button" href="../../general.html">远景规划</a>
+                <a class="navi-button active" href="../../China.html" >具体省份</a>
+
+                <a class="navi-button" href="../../contact.html">联系我们</a>
+            </div>
+        </div>
+    </header>
+
+    <aside class="left-father">
+        <div class="left-box">
+            <div class="left-title">
+                规划方向
+            </div>
+            <a class="left-button" href="./sp-sh-knowledge.html"><img src="../fonts/fonts/knowledge.svg"
+                    class="left-img"><span class="label">知识产权</span></a>
+            <a class="left-button left-button-point" href="./sp-sh-CNmedicine.html"><img
+                    src="../fonts/fonts/sh-CNmedicine.svg" class="left-img"><span class="label">中医药</span></a>
+            <a class="left-button" href="./sp-sh-education.html"><img src="../fonts/fonts/sh-education.svg"
+                    class="left-img"><span class="label">教育</span></a>
+            <a href="../sc/sp-sc-ecosys.html" class="left-button"><img src="../fonts/fonts/ecnomic.svg"
+                    class="left-img"><span class="label">生态环境</span></a>
+            <a href="../sc/sp-sc-publiclaw.html" class="left-button"><img src="../fonts/fonts/law.svg"
+                    class="left-img"><span class="label">公共法律</span></a>
+
+            <a href="../sc/sp-sc-publicserve.html" class="left-button"><img src="../fonts/fonts/public-service.svg"
+                    class="left-img"><span class="label">公共服务</span></a>
+            <a href="../sc/sp-sc-emergency.html" class="left-button"><img src="../fonts/fonts/rush.svg"
+                    class="left-img"><span class="label">应急体系</span></a>
+            <a href="../sc/sp-sc-finance.html" class="left-button"><img src="../fonts/fonts/ecnomic.svg"
+                    class="left-img"><span class="label">金融业</span></a>
+            <a href="../sc/sp-sc-health.html" class="left-button"><img src="../fonts/fonts/health.svg"
+                    class="left-img"><span class="label">卫生健康</span></a>
+        </div>
+    </aside>
+    <main class="right-box">
+        <div class="right-top-box">
+            <h4 style="color:#012970">中医药</h4>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#" class="bread-a">主页</a></li>
+                    <li class="breadcrumb-item"><a href="#" class="bread-a">具体省份</a></li>
+                    <li class="breadcrumb-item"><a href="#" class="bread-a">上海</a></li>
+                    <li class="breadcrumb-item active" aria-current="page" style="color:#51678f">知识产权</li>
+                </ol>
+            </nav>
+            <div class="card-2">
+                <h4 class="top-card-title">
+                    中医药
+                    <span class="top-card-span">|上海</span>
+                </h4>
+                <p class="top-card-p">
+                    以习近平新时代中国特色社会主义思想为指导，以创建国家中医药事业产业综合改革示范区为重要契机，深入践行“人民城市人民建，
+                    人民城市为人民”重要理念，以维护人民群众健康为中心，坚持中西医并重，着力推进体制机制创新，着力发扬“海派中医”特色优势，
+                    推动本市中医药治理能力现代化和中医药特色发展、内涵发展、转型发展、融合发展，加快构筑新时代上海中医药发展的战略优势，
+                    为“健康上海”建设作出更大贡献。
+                </p>
+            </div>
+        </div>
+        <div class="right-bottom-box">
+            <div class="card-1" id="bar">
+
+            </div>
+
+
+
+            <div class="card-1" id="bar2">
+
+            </div>
+
+        </div>
+    </main>
+    </div>
+
+    <script src="../echarts.min.js"></script>
+
+    <script src="../button.js">
+    </script>
+
+    <script src=""></script>
+    <script>
+        var chartDom = document.getElementById('bar');
+        var myChart = echarts.init(chartDom);
+        var option;
+
+        option = {
+            color: ['#ADD8E6', '#4682B4', '#BDB76B', '#000080', '#7ccd7c', '#D8BFD8', '#8B8878', '#528B8B'],
+            title: {
+                text: '部分中医药发展指标'
+            },
+            radar: {
+                center: ['50%', '50%'],
+                radius: '60%',
+                // shape: 'circle',
+                indicator: [
+                    { name: '二级及以上公立中医医院中医类别执业（助理）医师比例（%）', max: 100 },
+                    { name: '社区卫生服务中心中医类别\n执业（助理）医师比例（%）', max: 100 },
+                    { name: '设置中医临床科室\n的二级及以上公立\n综合医院比例（%）', max: 100 },
+                    { name: '设置中医临床科室\n的二级及以上妇幼\n保健机构比例（%）', max: 100 },
+                    { name: '设置治未病科的二级及以上\n中医类医院比例（%）', max: 100 },
+                    { name: '设置康复（医学）科的二级及以上中医类医院比例（%）', max: 100 },
+                    { name: '0-36个月儿童中医药健康管理率（%）', max: 100 },
+                    { name: '65岁以上老年人\n中医药健康管理率（%）', max: 100 },
+                    { name: '家庭医生团队\n中医药服务覆盖率（%）', max: 100 },
+                    { name: '上海公民中医药\n健康文化素养水平（%）', max: 100 },
+                ]
+            },
+            series: [
+                {
+                    name: '部分中医药发展指标',
+                    type: 'radar',
+                    label: {
+                        show: true,
+                        color: "#0f58a2",
+                        fontSize: 12,
+                    },
+                    data: [
+                        {
+                            value: [60, 25, 100, 100, 100, 100, 75, 75, 100, 33],
+                            name: 'Allocated Budget'
+                        },
+                    ]
+                }
+            ],
+            grid: {
+                top: '4%',
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                containLabel: true
+            }
+        }
+        option && myChart.setOption(option);
+
+        var chartDom2 = document.getElementById('bar2');
+        var myChart2 = echarts.init(chartDom2);
+        var option2;
+        option2 = {
+            color: ['#ADD8E6', '#4682B4', '#BDB76B', '#000080', '#7ccd7c', '#D8BFD8', '#8B8878', '#528B8B'],
+            title: {
+                text: '部分中医药发展指标(增幅%)'
+            },
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: {
+                    type: 'shadow'
+                }
+            },
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                containLabel: true
+            },
+            xAxis: [
+                {
+                    type: 'category',
+                    data: ['卫生健康资源每\n千人口公立中医医\n院床位数(张)', '每千人口\n中医类别\n执业(助理)\n医师数(人)',
+                        '每万人口\n中医类别全科\n医生数(人)', '设置老年病\n科的二级及以\n上公立中医\n类医院比例(%)', '中医药健康服\n务总规模'],
+                    axisTick: {
+                        alignWithLabel: true
+                    }
+                }
+            ],
+            yAxis: [
+                {
+                    type: 'value'
+                }
+            ],
+            series: [
+                {
+                    name: '增幅（%）',
+                    type: 'bar',
+                    barWidth: '60%',
+                    data: [10, 10, 10, 10, 50]
+                }
+            ]
+        }
+        option2 && myChart2.setOption(option2);
+    </script>
+
+
+</body>
+
+</html>

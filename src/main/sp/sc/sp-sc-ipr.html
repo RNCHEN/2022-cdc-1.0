@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>specific-page</title>
+    <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../sp.css">
+</head>
+
+<body>
+    <header class="navi-contain">
+        <div class="navi">
+            <div class="left-navi">
+                <img src="../fonts/fonts/city.svg" class="navi-img">
+                <span>四川省</span>
+            </div>
+            <div class="right-navi">
+                <a class="navi-button" href="../../index_start.html" >历史馆</a>
+                <a class="navi-button" href="../../gallery.html">热门词云</a>
+                <a class="navi-button" href="../../general.html">远景规划</a>
+                <a class="navi-button active" href="../../China.html" >具体省份</a>
+
+                <a class="navi-button" href="../../contact.html">联系我们</a>
+            </div>
+        </div>
+    </header>
+
+
+    <aside class="left-father">
+        <div class="left-box">
+            <div class="left-title">
+                规划方向
+            </div>
+            <a href="../sc/sp-sc-ecosys.html" class="left-button"><img src="../fonts/fonts/ecnomic.svg"
+                    class="left-img"><span class="label">生态环境</span></a>
+            <a href="../sc/sp-sc-publiclaw.html" class="left-button"><img src="../fonts/fonts/law.svg"
+                    class="left-img"><span class="label">公共法律</span></a>
+            <a href="../sc/sp-sc-ipr.html" class="left-button left-button-point"><img src="../fonts/fonts/knowledge.svg"
+                    class="left-img"><span class="label">知识产权</span></a>
+            <a href="../sc/sp-sc-publicserve.html" class="left-button"><img src="../fonts/fonts/public-service.svg"
+                    class="left-img"><span class="label">公共服务</span></a>
+            <a href="../sc/sp-sc-emergency.html" class="left-button"><img src="../fonts/fonts/rush.svg"
+                    class="left-img"><span class="label">应急体系</span></a>
+            <a href="../sc/sp-sc-finance.html" class="left-button"><img src="../fonts/fonts/ecnomic.svg"
+                    class="left-img"><span class="label">金融业</span></a>
+            <a href="../sc/sp-sc-health.html" class="left-button"><img src="../fonts/fonts/health.svg"
+                    class="left-img"><span class="label">卫生健康</span></a>
+        </div>
+    </aside>
+    <main class="right-box">
+        <div class="right-top-box">
+            <h4 style="color:#012970">知识产权</h4>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#" class="bread-a">主页</a></li>
+                    <li class="breadcrumb-item"><a href="/China.html" class="bread-a">具体省份</a></li>
+                    <li class="breadcrumb-item"><a href="#" class="bread-a">四川省</a></li>
+                    <li class="breadcrumb-item active" aria-current="page" style="color:#51678f">知识产权</li>
+                </ol>
+            </nav>
+            <div class="card-2">
+                <h4 class="top-card-title">
+                    知识产权
+                    <span class="top-card-span">|四川</span>
+                </h4>
+                <p class="top-card-p">
+                    坚持以习近平新时代中国特色社会主义思想为指导,深入贯彻习近平总书记关于知识产权工作的重要指示精神,全面落实党中央、国务院和省委、省政府决策部署,完整、准确、全面贯彻新发展理念,以推动高质量发展为主题,实施知识产权强省战略,深化知识产权领域改革创新,强化知识产权创造、运用、保护、管理和服务,为建设国家创新驱动发展先行省奠定坚实基础。
+                    <a href="https://www.sc.gov.cn/10462/11555/11562/2022/2/7/924d99f39c1b4774892b2dfc8e735b07/files/8ed48c99c8064a4eb919799fda1e6464.PDF">查看更多</a>
+                </p>
+            </div>
+        </div>
+        <div class="right-bottom-box">
+            <div class="card-1" id="bar">
+
+            </div>
+
+
+
+            <div class="card-1" id="bar2">
+
+            </div>
+
+        </div>
+    </main>
+    </div>
+
+
+    <script src="echarts.min.js"></script>
+
+    <script src="../button.js"> </script>
+
+    <script src="../echarts.min.js"></script>
+    <script>
+        var chartDom = document.getElementById('bar');
+        var myChart = echarts.init(chartDom);
+        var option;
+        //option...
+        option = {
+            title: {
+                text: '知识产权发展主要目标'
+            },
+            legend: {},
+            tooltip: {},
+            dataset: {
+                source: [
+                    ['product', '2020', '2025'],
+                    ['每万人高价值专利拥有(件)', 2.97, 5.67],
+                    ['专利密集产业增值占GDP(%)', 12.34, 13],
+                    ['版权产业增加值占GDP(%)', 5.47, 6],
+                ]
+            },
+            xAxis: { type: 'category' },
+            yAxis: {},
+            // Declare several bar series, each will be mapped
+            // to a column of dataset.source by default.
+            series: [
+                {
+                    type: 'bar',
+                    itemStyle: {
+                        color: "#a5d58e",
+                    },
+                },
+                {
+                    type: 'bar',
+                    itemStyle: {
+                        color: "#5572c9",
+                    },
+                }
+            ]
+        };
+        option && myChart.setOption(option);
+
+        var chartDom2 = document.getElementById('bar2');
+        var myChart2 = echarts.init(chartDom2);
+        var option2;
+        //option2...
+        option2 = {
+            title: {
+                text: '知识产权发展主要目标',
+                left: 'left'
+            },
+            angleAxis: {
+                type: 'category',
+                data: ['知识产权质押融资登记金额(亿元)', '知识产权民事一审案件服判息诉率(%)', '知识产权公共服务网点市(州)覆盖率(%)', '知识产权纠纷人民调解委员会市(州)覆盖率(%)']
+            },
+            tooltip: {
+                trigger: 'item',
+                formatter: '{a} <br /> {b}:{c}'
+            },
+            radiusAxis: {},
+            polar: {},
+            series: [
+                {
+                    type: 'bar',
+                    data: [60, 88, 40, 30],
+                    coordinateSystem: 'polar',
+                    name: '2020',
+                    stack: 'a',
+                    itemStyle: {
+                        color: "#73c0de"
+                    },
+                    emphasis: {
+                        focus: 'series'
+                    }
+                },
+                {
+                    type: 'bar',
+                    data: [60, 4, 40, 70],
+                    coordinateSystem: 'polar',
+                    name: '2025',
+                    stack: 'a',
+                    itemStyle: {
+                        color: "#fac858"
+                    },
+                    emphasis: {
+                        focus: 'series'
+                    }
+                }
+            ],
+            legend: {
+                show: true,
+                data: ['2020', '2025']
+            }
+        };
+        option2 && myChart2.setOption(option2);
+    </script>
+
+
+</body>
+
+</html>
