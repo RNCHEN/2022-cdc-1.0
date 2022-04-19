@@ -10,9 +10,11 @@ This is the 2022 Computer Design Competition
 
 - we choose the **Category 6, item 4, Data visualization **
 - project name: `The Expectation of the 14th 5-year plan`
-
 - School : University of Electronic Science and Technology of China
-- Teammates: Jeffrey-Chen ,
+- Teammates: 
+  - Jeffrey-Chen    https://github.com/RNCHEN
+  - Xuhan    https://github.com/AIMYON22
+  - Eureka https://github.com/Assassin187
 
 ## Quick Start
 
