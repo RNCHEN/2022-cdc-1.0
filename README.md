@@ -2,13 +2,13 @@
 
 **Statement**:
 
-If you find any problems no matter with the accurancy of data or the descriptions, or just want to give your ideas about the projecy, please contact us with the following Email
+If you find any problems no matter if it is the accurancy of data or the descriptions, or just want to give your ideas about the project, please contact us with the following Email
 
 >  2448297223@qq.com
 
 This is the 2022 Computer Design Competition
 
-- we choose the **Category 6, item 4, Data visualization **
+- we choose the **Category 6, item 4, Data visualization**
 - project name: `The Expectation of the 14th 5-year plan`
 
 - School : University of Electronic Science and Technology of China
