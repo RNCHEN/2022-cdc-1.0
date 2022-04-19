@@ -22,6 +22,12 @@ you can find the display video with the following link
 
 https://www.bilibili.com/video/BV1u44y1G7yL#reply109645850640
 
+you can use the website at 
+
+https://rnchen.github.io/firstDeployment/
+
+**However, because of some reasons, the desktop can use it normally while the loptop need to shrink it to 80% or less**
+
  you can start the main code with `0408Beta`->`main`->`fire.html` 
 
  you can find the data process revelant code in `python`
@@ -212,6 +218,54 @@ for word in words:
     else:
         counts[word] = counts.get(word, 0) + 1  # dict用法
 ```
+
+8. depolyment 
+
+   First: you need to have `Nodejs`
+
+   ![image-20220419101054470](https://raw.githubusercontent.com/RNCHEN/photo-326/master/blogImg/image-20220419101054470.png)
+
+   then run the following script in the Terminal
+
+   > npm install http-server -g
+
+   ![image-20220419101135489](https://raw.githubusercontent.com/RNCHEN/photo-326/master/blogImg/image-20220419101135489.png)
+
+   and then =>
+
+   > http-server -c-1
+
+   To simplify the working, we choose `Github Pages` to finish the deployment 
+
+   You can create a empty repo **without README( at least for me)**, then =>
+
+   ![image-20220419100541470](https://raw.githubusercontent.com/RNCHEN/photo-326/master/blogImg/image-20220419100541470.png)
+
+   choose the *master* and click the *save*
+
+   ![image-20220419100602171](https://raw.githubusercontent.com/RNCHEN/photo-326/master/blogImg/image-20220419100602171.png)
+
+   wait for a moment and your web is deployed
+
+   : )
+
+==ATTENTION:==
+
+- you must have the `index.html` instead of any other names.
+
+- if the web display the `README` file, you can delete it.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
