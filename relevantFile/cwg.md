@@ -607,3 +607,50 @@ https://blog.csdn.net/qq_43202474/article/details/109101323
 很有意思的爬虫问题
 
 ![image-20220418133635514](https://raw.githubusercontent.com/RNCHEN/photo-326/master/blogImg/image-20220418133635514.png)
+
+![image-20220419135222475](https://raw.githubusercontent.com/RNCHEN/photo-326/master/blogImg/image-20220419135222475.png)
+
+![image-20220419135545288](https://raw.githubusercontent.com/RNCHEN/photo-326/master/blogImg/image-20220419135545288.png)
+
+![image-20220419140741565](https://raw.githubusercontent.com/RNCHEN/photo-326/master/blogImg/image-20220419140741565.png)
+
+如何做出随机泡泡的效果呢
+
+```js
+node.children[0].children[0].style.setProperty('left',node.children[0].children[0].style.left+n+'px')
+```
+
+为什么会这样子呢
+
+![image-20220419152600844](https://raw.githubusercontent.com/RNCHEN/photo-326/master/blogImg/image-20220419152600844.png)
+
+```js
+  setInterval(function () {
+        once = node.children[0].children[0].style.left
+        console.log('onceB', once);
+        n = randomNum(0, 100)+'px';
+        console.log('n',n)
+        n=n+once;
+        node.children[0].children[0].style.setProperty('left',n )
+        console.log('onceA', node.children[0].children[0].style.left);
+    }, 5000)
+```
+
+> n 26px153px
+
+问题是这里是字符串的拼接而不是字符串
+
+![image-20220419153438838](https://raw.githubusercontent.com/RNCHEN/photo-326/master/blogImg/image-20220419153438838.png)
+
+所以emmm我们
+
+![1](C:/Users/sx-9756/Desktop/1.gif)
+
+就大无语
+
+最后采用了
+
+非常弱智的手动更改
+
+两个move
+

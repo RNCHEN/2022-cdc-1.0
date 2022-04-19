@@ -257,18 +257,6 @@ for word in words:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 ## My words
 
 **Re statement**: 

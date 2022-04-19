@@ -17,6 +17,7 @@ window.onload = function () {
     }
     initChart();
     initBubble();
+    // bubbleAnimation();
 };
 
 
@@ -57,21 +58,21 @@ const titleData = [
 ];
 
 const dataTxt = [
-    ['社会主义工业化','计划经济体制','乡村振兴','八字方针','基本消除贫困','国防力量','对外贸易','三线建设','发展农业','“一带一路”','供给侧结构性改革','制造强国','现代产业体系','乡村振兴','社会主义先进文化' ,'新型城镇化战略'],
-    ['社会主义工业化','计划经济体制','社会主义改造'],
-    ['八字方针','国民经济技术改造','国防力量'],
-    ['国防建设','三线建设','发展农业'],
-    ['农业机械化','发展新技术','三线建设'],
-    ['农业机械化','国民经济比例','生产建设发展'],
-    ['社会发展','家庭联产承包责任制','农业改革','对外开放'],
-    ['全面经济改革','所有制结构','经济运行新体制'],
-    ['经济体制改革','对外贸易','对外开放总体格局'],
-    ['现代化建设','现代企业制度建设','社会主义市场经济体制','小康','基本消除贫困'],
-    ['可持续发展','西部大开发','城镇化'],
-    ['科学发展观','“六个必须”','人才强国'],
-    ['现代农业','区域协调发展','科技创新','教育改革'],
-    ['“一带一路”','供给侧结构性改革','制造强国'],
-    ['现代产业体系','乡村振兴','社会主义先进文化' ,'新型城镇化战略']
+    ['社会主义工业化', '计划经济体制', '乡村振兴', '八字方针', '基本消除贫困', '国防力量', '对外贸易', '三线建设', '发展农业', '“一带一路”', '供给侧结构性改革', '制造强国', '现代产业体系', '乡村振兴', '社会主义先进文化', '新型城镇化战略'],
+    ['社会主义工业化', '计划经济体制', '社会主义改造'],
+    ['八字方针', '国民经济技术改造', '国防力量'],
+    ['国防建设', '三线建设', '发展农业'],
+    ['农业机械化', '发展新技术', '三线建设'],
+    ['农业机械化', '国民经济比例', '生产建设发展'],
+    ['社会发展', '家庭联产承包责任制', '农业改革', '对外开放'],
+    ['全面经济改革', '所有制结构', '经济运行新体制'],
+    ['经济体制改革', '对外贸易', '对外开放总体格局'],
+    ['现代化建设', '现代企业制度建设', '社会主义市场经济体制', '小康', '基本消除贫困'],
+    ['可持续发展', '西部大开发', '城镇化'],
+    ['科学发展观', '“六个必须”', '人才强国'],
+    ['现代农业', '区域协调发展', '科技创新', '教育改革'],
+    ['“一带一路”', '供给侧结构性改革', '制造强国'],
+    ['现代产业体系', '乡村振兴', '社会主义先进文化', '新型城镇化战略']
 ]
 const dataLink = [
     'https://www.baidu.com/',
@@ -527,8 +528,12 @@ function Star() {
 function initBubble() {
     //创建一个元素，放所有的小圆
     var circleBox = document.createElement('div');
-    circleBox.style.cssText = `display:flex;width:500px;
-        flex-wrap:  wrap;`;
+    circleBox.style.cssText = `
+    display:flex;   
+    width:500px;   
+    position:relative;
+    flex-wrap: wrap;`
+        ;
     //获取随机数   from 参数表示从哪个数开始  to参数表示到哪个数结束 from<= num <= to
     function randomNum(from, to) {
         from = Number(from);
@@ -541,25 +546,39 @@ function initBubble() {
     for (var i = 0; i < 13; i++) {
         //创建小圆
         var circle = document.createElement('div');
-        console.log('dataTxt', dataTxt[0][i])
+        // console.log('dataTxt', dataTxt[0][i])
         circle.innerHTML = dataTxt[0][i]
         // 下面的4个变量 代表小圆随机位置  和 随机持续时间和延迟
         var bottom = randomNum(10, 1000);
-        var left = randomNum(-200, 200);
-        var duration = randomNum(10, 30) / 1;
-        var delay = randomNum(0, 50) / 10;
-        console.log('i', i);
+        var left = randomNum(0, 200);
+        var duration = randomNum(10, 60) / 1;
+        var delay = randomNum(1, 10);
+        // console.log('left', left);
         circle.style.cssText += `
-            animation:move2 ${duration}s linear ${delay}s infinite;
-            animation-fill-mode: forwards;
-            flex-wrap:  wrap;
-            bottom:${bottom}px;
-            cursor:default;
-            left:${left}px;
-            display:flex;
+      
+        flex-direction: column;
+        position:absolute;
+        animation-fill-mode: forwards;
+        animation-iteration-count:infinite;
+        flex-wrap:  wrap;
+        left:${left}px;
+        background-color: aqua
+        cursor:default;
+        display:flex;
+        width: 80px;
+        height: 80px;
+        background: rgba(253, 170, 102, 0.3);
+        border-radius: 50%;
+        text-align: center;
+        justify-content: center;
             `;
+        if (i % 2) {
+            circle.style.cssText += `  animation:move2 ${duration}s linear ${delay}s infinite;`
+        } else {
+            circle.style.cssText += `  animation:move1 ${duration}s linear ${delay}s infinite;`
+        }
         circle.className += " dot";
-        console.log('CIRCLE', i, circle)
+        // console.log('CIRCLE', i, circle)
         //把每个小圆 都加入这个div
         circleBox.appendChild(circle);
 
@@ -581,10 +600,14 @@ function exBubble(e) {
     var fire = document.querySelector(".fire");
     console.log('fire=', fire.children[0])
     fire.children[0].remove()
-
     console.log('in fire =', fire)
     var circleBox = document.createElement('div');
-    circleBox.style.cssText = `display:flex;   width:500px;   flex-wrap: wrap;`;
+    circleBox.style.cssText = `
+    display:flex;   
+    width:500px;   
+    position:relative;
+    flex-wrap: wrap;
+    `;
     //获取随机数   from 参数表示从哪个数开始  to参数表示到哪个数结束 from<= num <= to
     function randomNum(from, to) {
         from = Number(from);
@@ -593,29 +616,40 @@ function exBubble(e) {
         var num = from + Math.round(Math.random() * Range); //四舍五入
         return num;
     };
-
-    for (var i = 0; i < 3 ; i++) {
+    for (var i = 0; i < 3; i++) {
         //创建泡泡
         var circle = document.createElement('div');
         circle.innerHTML = dataTxt[e][i]
         // 下面的4个变量 代表小圆随机位置  和 随机持续时间和延迟
         var bottom = randomNum(10, 1000);
-        var left = randomNum(-200, 200);
+        var left = randomNum(0, 200);
         var duration = randomNum(10, 30) / 1;
         var delay = randomNum(0, 50) / 10;
-         
+
         console.log('i', i);
         circle.id = i;
- 
         circle.style.cssText += `
-            animation:move2 ${duration}s linear ${delay}s infinite;
-            animation-fill-mode: forwards;
-            flex-wrap:  wrap;
-            bottom:${bottom}px;
-            cursor:default;
-            left:${left}px;
-            display:flex;
+        flex-direction: column;
+        position:absolute;
+        animation-fill-mode: forwards;
+        animation-iteration-count:infinite;
+        flex-wrap:  wrap;
+        left:${left}px;
+        background-color: aqua
+        cursor:default;
+        display:flex;
+        width: 80px;
+        height: 80px;
+        background: rgba(253, 170, 102, 0.3);
+        border-radius: 50%;
+        text-align: center;
+        justify-content: center;
             `;
+        if (i % 2) {
+            circle.style.cssText += `  animation:move2 ${duration}s linear ${delay}s infinite;`
+        } else {
+            circle.style.cssText += `  animation:move1 ${duration}s linear ${delay}s infinite;`
+        }
         circle.className += " dot";
         console.log('CIRCLE', i, circle)
         //把每个小圆 都加入这个div
@@ -633,5 +667,31 @@ function exBubble(e) {
     var fire = document.querySelector(".fire");
     //把有40个随机小圆的 div 加入DOM树
     fire.appendChild(circleBox);
+
+}
+
+function bubbleAnimation() {
+    function randomNum(from, to) {
+        from = Number(from);
+        to = Number(to);
+        var Range = to - from;
+        var num = from + Math.round(Math.random() * Range); //四舍五入
+        return num;
+    };
+
+    var node = document.querySelector(".fire")
+    console.log('we choose the\n', node.children[0].children[0])
+    console.log('LEFT = \n', node.children[0].children[0].style.left)
+
+    setInterval(function () {
+        once = node.children[0].children[0].style.left
+        once = parseInt(once)
+        console.log('onceB', once);
+        n = randomNum(-5, 5);
+        n = n + once;
+        console.log('n', n)
+        node.children[0].children[0].style.setProperty('left', n + 'px')
+        console.log('onceA', node.children[0].children[0].style.left);
+    }, 500)
 
 }
