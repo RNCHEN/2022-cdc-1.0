@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>纯css3圆形从中心向四周扩散动画效果_何问起</title>
+    <style>
+        @keyframes warn {
+            0% {
+                transform: scale(0.3);
+                -webkit-transform: scale(0.3);
+                opacity: 0.0;
+            }
+
+            25% {
+                transform: scale(0.3);
+                -webkit-transform: scale(0.3);
+                opacity: 0.1;
+            }
+
+            50% {
+                transform: scale(0.5);
+                -webkit-transform: scale(0.5);
+                opacity: 0.3;
+            }
+
+            75% {
+                transform: scale(0.8);
+                -webkit-transform: scale(0.8);
+                opacity: 0.5;
+            }
+
+            100% {
+                transform: scale(1);
+                -webkit-transform: scale(1);
+                opacity: 0.0;
+            }
+        }
+
+        @keyframes warn1 {
+            0% {
+                transform: scale(0.3);
+                -webkit-transform: scale(0.3);
+                opacity: 0.0;
+            }
+
+            25% {
+                transform: scale(0.3);
+                -webkit-transform: scale(0.3);
+                opacity: 0.1;
+            }
+
+            50% {
+                transform: scale(0.3);
+                -webkit-transform: scale(0.3);
+                opacity: 0.3;
+            }
+
+            75% {
+                transform: scale(0.5);
+                -webkit-transform: scale(0.5);
+                opacity: 0.5;
+            }
+
+            100% {
+                transform: scale(0.8);
+                -webkit-transform: scale(0.8);
+                opacity: 0.0;
+            }
+        }
+
+        .container {
+            background-color: aqua;
+            position: relative;
+            width: 40px;
+            height: 40px;
+            border: 1px solid #000;
+        }
+
+        /* 保持大小不变的小圆圈 何问起 */
+        .dot {
+            position: absolute;
+            background-color: aqua;
+            width: 200px;
+            height: 200px;
+            left: 120px;
+            top: 120px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            /* border: 2px solid red; */
+            border-radius: 50%;
+            z-index: 2;
+            margin: 500px;
+        }
+
+        .dot > img {
+            width: 100%;
+            height: 100%;
+        }
+        
+
+        /* 产生动画（向外扩散变大）的圆圈  */
+        .pulse {
+            position: absolute;
+            width: 320px;
+            height: 320px;
+            left: 2px;
+            top: 2px;
+            border: 6px solid rgb(127, 55, 175);
+            /* -webkit-border-radius: 50%;
+            -moz-border-radius: 50%; */
+            /* border-radius: 50%; */
+            z-index: 1;
+            opacity: 0;
+            -webkit-animation: warn 2s ease-out;
+            -moz-animation: warn 2s ease-out;
+            animation: warn 2s ease-out;
+            -webkit-animation-iteration-count: infinite;
+            -moz-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+            box-shadow: 1px 1px 30px rgb(79, 192, 116);
+        }
+
+        .pulse1 {
+            position: absolute;
+            width: 320px;
+            height: 320px;
+            left: 2px;
+            top: 2px;
+            /* border: 6px solid red; */
+            /* -webkit-border-radius: 50%;
+            -moz-border-radius: 50%; */
+            /* border-radius: 50%; */
+            z-index: 1;
+            opacity: 0;
+            -webkit-animation: warn1 2s ease-out;
+            -moz-animation: warn1 2s ease-out;
+            animation: warn1 2s ease-out;
+            -webkit-animation-iteration-count: infinite;
+            -moz-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+            box-shadow: 1px 1px 30px rgb(252, 40, 146);
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body><a href="http://hovertree.com/h/bjaf/i309b77d.htm" target="_blank">说明</a>
+    <div class="container">0
+        <div class="dot">
+            <!-- background-image: url(/assets/img/afire.gif); -->
+            <img src="./assets/img/afire-b.gif" alt="test">
+        </div>5
+        <div class="pulse">2</div>6
+        <div class="pulse1">3</div>7
+        4
+    </div>
+</body>
+
+</html>

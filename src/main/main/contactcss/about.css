@@ -1,0 +1,107 @@
+@font-face {
+  font-family: 'Chinese01';
+  src: url('../fonts/hanyu.ttf') format('truetype');
+}
+* {
+  background-image: url(../images/chalkboard-6020577_1920.png) no-repeat;
+}
+.container h2 {
+  font-family: 杨任东竹石体;
+}
+.about {
+  z-index: 100;
+  display: flex;
+  min-width: 1024px;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0.2rem 0.2rem 0.2rem;
+  background-size: 100% 100%;
+}
+.about .column {
+  flex: 3;
+}
+.about .column:nth-child(2) {
+  flex: 5;
+}
+.about .box-intr {
+  height: 800px;
+  width: 680px;
+  margin-right: 0.15rem;
+  background-size: 100% 100%;
+}
+.about .box-intr .pt-page {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.about .box-intr .pt-page-current,
+.about .box-intr .no-js .pt-page {
+  visibility: visible;
+  z-index: 1;
+}
+.about #viewsWrapper {
+  height: 10rem;
+  width: 5.5rem;
+  margin-right: 0.15rem;
+  background-size: 100% 100%;
+  position: relative;
+  overflow: auto;
+}
+.about #go {
+  position: absolute;
+  height: 50px;
+  top: 690px;
+  left: 120px;
+  bottom: 10px;
+  font-size: 20px;
+}
+.about .box-map {
+  height: 10rem;
+  width: 18.8rem;
+  margin-left: 0.2rem;
+  background-size: 100% 100%;
+}
+.about .university {
+  width: 400px;
+  height: 720px;
+  overflow: auto;
+  background-color: rgba(206, 206, 206, 0.2);
+  margin-top: 80px;
+}
+.about h1 {
+  text-align: center;
+  line-height: 1rem;
+  color: #000000;
+  font-family: 迷你简行楷;
+}
+.about h2 {
+  margin-top: 0.2rem;
+  margin-left: 0.42rem;
+  margin-right: 0.3rem;
+  text-align: left;
+  font-size: 22px;
+  color: #000000;
+  font-family: 汉仪中圆简;
+}
+.about h3 {
+  margin-top: 0.17rem;
+  margin-left: 1rem;
+  margin-right: 0.3rem;
+  text-align: left;
+  font-size: 22px;
+  color: #000000;
+  font-family: 汉仪中圆简;
+}

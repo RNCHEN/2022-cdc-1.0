@@ -227,7 +227,10 @@ function initChart() {
                 ...datasetWithFilters
             ],
             title: {
-                text: 'GDP'
+                text: 'GDP',
+                textStyle: {
+                    color: '#ffffff'
+                },
             },
             tooltip: {
                 order: 'valueDesc',
@@ -239,7 +242,7 @@ function initChart() {
                 axisLabel: {
                     fontWeight: "bold",
                     fontStyle: "normal",
-                    color: "#444444",
+                    color: "#ffffff",
                     fontSize: 12
                 }
             },
@@ -248,7 +251,7 @@ function initChart() {
                 axisLabel: {
                     fontWeight: "bold",
                     fontStyle: "normal",
-                    color: "#444444",
+                    color: "#ffffff",
                     fontSize: 12
                 }
             },
@@ -423,7 +426,7 @@ function exCharts(e) {
                 {
                     name: '十四五的主要指标',
                     type: 'pie',
-                    radius: [50, 250],
+                    radius: [50, 200],
                     center: ['50%', '50%'],
                     roseType: 'area',
                     itemStyle: {
@@ -470,7 +473,7 @@ function exCharts(e) {
                 axisLabel: {
                     fontWeight: "bold",
                     fontStyle: "normal",
-                    color: "#444444",
+                    color: "#fffffff",
                     fontSize: 18
                 }
             },
@@ -479,12 +482,12 @@ function exCharts(e) {
                 name: 'GDP(美元)',
                 nameTextStyle: {
                     fontWeight: "bold",
-                    color: "#444444",
+                    color: "#ffffff",
                 },
                 axisLabel: {
                     fontWeight: "bold",
                     fontStyle: "normal",
-                    color: "#444444",
+                    color: "#ffffff",
                 }
             },
             series: [

@@ -170,7 +170,7 @@ h6 {
 .navbar a:hover,
 .navbar .active,
 .navbar li:hover>a {
-    background: #ff5f2e;
+    background: #4F94CD;
 }
 
 .navbar .dropdown ul {
@@ -353,7 +353,7 @@ h6 {
     width: 100%;
     overflow: hidden;
     position: relative;
-    background: linear-gradient(0deg, #74d5f3 0%, #43cffa 100%);
+    background: linear-gradient(0deg, #286097 0%, 	#104E8B 100%);
     padding: 0;
 }
 
@@ -406,17 +406,23 @@ h6 {
 
 /* 小圆的样式 */
 .dot {
-    position: absolute;
+    /* position: absolute; */
    
     /* display: flex; */
     /* flex-direction: row; */
+    color: #fff;
     flex-shrink: 0;
     bottom: -310px;
     margin-left: 0px;
     left: 0;
-   
-  
-    /* box-shadow: inset -5px 7px 8px 0 rgb(255, 205, 205); */
+    width: 80px;
+    height: 80px;
+    background: rgba(78, 75, 75, 0.3);
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: inset -5px 7px 8px 0 rgb(182, 176, 176);
     flex-wrap:  wrap;
 }
 
