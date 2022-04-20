@@ -657,3 +657,13 @@ node.children[0].children[0].style.setProperty('left',node.children[0].children[
 滑动到底部的时候
 
 ![image-20220420100045194](https://raw.githubusercontent.com/RNCHEN/photo-326/master/blogImg/image-20220420100045194.png)
+
+![image-20220420101035028](https://raw.githubusercontent.com/RNCHEN/photo-326/master/blogImg/image-20220420101035028.png)
+
+there are 3 section that need to be modify the color 
+
+![image-20220420101309163](https://raw.githubusercontent.com/RNCHEN/photo-326/master/blogImg/image-20220420101309163.png)
+
+![image-20220420101315895](https://raw.githubusercontent.com/RNCHEN/photo-326/master/blogImg/image-20220420101315895.png)
+
+![](https://raw.githubusercontent.com/RNCHEN/photo-326/master/blogImg/image-20220420101315895.png)

@@ -49,21 +49,20 @@ body {
     /* background: #ededed; */
     border-radius: 10px;
 }
+
 .pa::-webkit-scrollbar-thumb {
     /*滚动条里面小方块*/
-    border-radius   : 10px;
+    border-radius: 10px;
     background-color: rgb(253, 93, 29);
-    background-image: -webkit-linear-gradient(
-        45deg,
-        rgba(255, 255, 255, 0.2) 25%,
-        transparent 25%,
-        transparent 50%,
-        rgba(255, 255, 255, 0.2) 50%,
-        rgba(255, 255, 255, 0.2) 75%,
-        transparent 75%,
-        transparent
-    );
-    }
+    background-image: -webkit-linear-gradient(45deg,
+            rgba(255, 255, 255, 0.2) 25%,
+            transparent 25%,
+            transparent 50%,
+            rgba(255, 255, 255, 0.2) 50%,
+            rgba(255, 255, 255, 0.2) 75%,
+            transparent 75%,
+            transparent);
+}
 
 
 
