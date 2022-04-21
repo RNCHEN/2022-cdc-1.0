@@ -77,7 +77,7 @@
     <!-- End Header -->
 
     <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex flex-column justify-content-end align-items-center">
+    <section id="hero" class="d-flex flex-column justify-content-end align-items-center" sty>
         <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
 
             <!-- Slide 1 -->
@@ -85,9 +85,9 @@
                 <div class="carousel-container">
                     <div class="pa" id="step-container" style="overflow">
                         <!-- onmouseover should be depart from onclick  -->
-                        <div class="step-circle" id="0" > 计划
+                        <div class="step-circle" id="0" onmousemove=exBg(0) onmouseleave=originBg()> 计划
                         </div>
-                        <div class="step-circle" id="1">一五
+                        <div class="step-circle" id="1"onmousemove=exBg(1) onmouseleave=originBg() >一五
                         </div>
                         <div class="step-circle" id="2" >二五</div>
                         <div class="step-circle" id="3" >三五</div>
@@ -156,7 +156,36 @@
                             所有数据来源均为公开的官方网站 如有数据出入请及时联系我们，我们会马上更正相关数据
                             数据来源<a href="http://www.gov.cn/xinwen/2021-03/13/content_5592681.htm">点击查看</a>
                         </p>
-                       
+                        <p>
+                            本网页展示多个国家重点发展领域
+                            所有数据来源均为公开的官方网站 如有数据出入请及时联系我们，我们会马上更正相关数据
+                            数据来源<a href="http://www.gov.cn/xinwen/2021-03/13/content_5592681.htm">点击查看</a>
+                        </p>
+                        <p>
+                            本网页展示多个国家重点发展领域
+                            所有数据来源均为公开的官方网站 如有数据出入请及时联系我们，我们会马上更正相关数据
+                            数据来源<a href="http://www.gov.cn/xinwen/2021-03/13/content_5592681.htm">点击查看</a>
+                        </p>
+                        <p>
+                            本网页展示多个国家重点发展领域
+                            所有数据来源均为公开的官方网站 如有数据出入请及时联系我们，我们会马上更正相关数据
+                            数据来源<a href="http://www.gov.cn/xinwen/2021-03/13/content_5592681.htm">点击查看</a>
+                        </p>
+                        <p>
+                            本网页展示多个国家重点发展领域
+                            所有数据来源均为公开的官方网站 如有数据出入请及时联系我们，我们会马上更正相关数据
+                            数据来源<a href="http://www.gov.cn/xinwen/2021-03/13/content_5592681.htm">点击查看</a>
+                        </p>
+                        <p>
+                            本网页展示多个国家重点发展领域
+                            所有数据来源均为公开的官方网站 如有数据出入请及时联系我们，我们会马上更正相关数据
+                            数据来源<a href="http://www.gov.cn/xinwen/2021-03/13/content_5592681.htm">点击查看</a>
+                        </p>
+                        <p>
+                            本网页展示多个国家重点发展领域
+                            所有数据来源均为公开的官方网站 如有数据出入请及时联系我们，我们会马上更正相关数据
+                            数据来源<a href="http://www.gov.cn/xinwen/2021-03/13/content_5592681.htm">点击查看</a>
+                        </p>
                         <p>
                             <!-- <a href="#">《用户服务协议》</a> -->
                         </p>
@@ -194,7 +223,13 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
     <script src="general.js"></script>
 
-    
+    <script>
+        var httpRequest = new XMLHttpRequest();//第一步：建立所需的对象
+        httpRequest.open('GET', 'http://sousuo.gov.cn/s.htm?t=govall&advance=false&n=&timetype=&mintime=&maxtime=&sort=&q=%E5%8D%81%E5%9B%9B%E4%BA%94', true);//第二步：打开连接  将请求参数写在url中  ps:"./Ptest.php?name=test&nameone=testone"
+        httpRequest.send();//第三步：发送请求  将请求参数写在URL中
+        console.log('httpRequest',httpRequest)
+        
+    </script>
 </body>
 
 </html>

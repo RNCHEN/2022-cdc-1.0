@@ -456,34 +456,34 @@ h6 {
 
 @keyframes move1 {
     100% {
-        transform: translate(0, -1550px);
+        transform: translate(0, -950px);
     }
 
     70% {
-        transform: translate(-500px, -1550px);
+        transform: translate(-100px, -800px);
         /* margin-left: 500px; */
         display: none;
     }
 
-    50% {
-        transform: translate(100px, -1550px);
+    40% {
+        transform: translate(100px, -500px);
     }
 }
 
 @keyframes move2 {
     100% {
-        transform: translate(0, -1550px);
+        transform: translate(0, -950px);
     }
 
     70% {
-        transform: translate(500px, -1550px);
+        transform: translate(100px, -800px);
         /* margin-left: 300px; */
 
         display: none;
     }
 
-    50% {
-        transform: translate(-100px, -1550px);
+    40% {
+        transform: translate(-100px, -550px);
     }
 }
 

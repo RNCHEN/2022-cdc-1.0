@@ -59,7 +59,7 @@ const titleData = [
 
 const dataTxt = [
     ['社会主义工业化', '计划经济体制', '乡村振兴', '“一带一路”', '基本消除贫困', '国防力量', '对外贸易', '三线建设', '发展农业', '“一带一路”', '供给侧结构性改革', '制造强国', '现代产业体系', '乡村振兴', '社会主义先进文化', '新型城镇化战略'],
-    ['社会主义工业化', '计划经济体制', '社会主义改造','计划经济体制','现代化武器'],
+    ['社会主义工业化', '计划经济体制', '社会主义改造','现代化武器','基本建设'],
     ['八字方针', '国民经济技术改造', '国防力量','建设社会主义','改变工业布局','国防科技'],
     ['国防建设', '三线建设', '发展农业','建设社会主义','改变工业布局',],
     ['农业机械化', '发展新技术', '三线建设','狠抓战备','经济协作区'],
@@ -560,7 +560,7 @@ function initBubble() {
         // 下面的4个变量 代表小圆随机位置  和 随机持续时间和延迟
         var bottom = randomNum(10, 1000);
         var left = randomNum(0, 200);
-        var duration = randomNum(30, 60) / 1;
+        var duration = randomNum(20, 30) / 1;
         var delay = randomNum(1, 10);
         // console.log('left', left);
         circle.style.cssText += `
@@ -632,7 +632,7 @@ function exBubble(e) {
         // 下面的4个变量 代表小圆随机位置  和 随机持续时间和延迟
         var bottom = randomNum(10, 1000);
         var left = randomNum(0, 200);
-        var duration = randomNum(30, 60) / 1;
+        var duration = randomNum(10,20) / 1;
         var delay = randomNum(0, 50) / 10;
 
         console.log('i', i);
@@ -704,3 +704,6 @@ function bubbleAnimation() {
     }, 500)
 
 }
+
+
+

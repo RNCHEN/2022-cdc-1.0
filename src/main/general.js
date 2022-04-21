@@ -614,3 +614,22 @@ function initCharts() {
 
 
 }
+const bgUrl = [
+    'assets/img/bg.jpg',
+    'assets/img/tech.png'
+]
+
+
+function exBg(e){
+    var bgNode = document.querySelector("#hero");
+    console.log('e',e);
+    bgNode.style.backgroundImage ="url("+bgUrl[e]+")"
+    //这种写法只能说我异想天开居然能成功
+    console.log('bgNode.style.backgroundImage',bgNode.style.backgroundImage)
+}
+function originBg(){
+    var bgNode = document.querySelector("#hero");
+    bgNode.style.backgroundImage = "";
+    bgNode.style.background = "linear-gradient(0deg, #c23135 0%, #c9484c 100%);";
+    console.log('leave')
+}
