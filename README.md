@@ -46,6 +46,14 @@ Our overall page is divided into four sections: `historical exhibition hall`, `p
 >
 > we just display the photo here
 
+
+
+
+
+![image-20220421170344848](https://raw.githubusercontent.com/RNCHEN/photo-326/master/blogImg/image-20220421170344848.png)
+
+
+
 we strat with the beginning animation
 
 - `beginning animation`
@@ -64,7 +72,7 @@ we strat with the beginning animation
 
 and we end with a **star animation**
 
-![image-20220418191600181](C:/Users/sx-9756/AppData/Roaming/Typora/typora-user-images/image-20220418191600181.png)
+![image-20220421174327021](https://raw.githubusercontent.com/RNCHEN/photo-326/master/blogImg/image-20220421174327021.png)
 
 
 
@@ -265,23 +273,20 @@ if you find any wrong with data, plz contact us. Any suggestions can be sent to 
 
 > 2448297223@qq.com
 
-Thanks for your watching
-
-: )
-
-## Some prepartion for competiton 
-
-### The mind of project 
-
-本作品是一个回顾中国历年经济数据以及展望十四五规划的重要经济数据的可视化平台
-
-创作本次作品的初衷是想方便大家更直观的了解和学习相关经济数据，同时通过数据可视的形式来激发大家的兴趣
-
-我们的整体页面分为四大功能，历史展馆、热门词云、远景规划、省份数据。
-
-我们尝试使用Python获取数据并处理相关数据，并使用前端技术和开源的Echarts图库来展示。 
 
 
+You can see the following photos that we have many similar templates, which are already cool and fascinating. And maybe the existed template is more beautiful than our project.
 
-### The hard 
+However, there is an old saying in China, that freshmen see the effect but the experts think the logic. 
 
+To be honest, if you ask me to finish the same effect without any Lib, of course I can not, but with the help of Echarts, achieving the following photo is just like building blocks, which means it does not have any tech level. What we need to do is to adjust some data and title and then you can boost to someone who is not familiar with the fond-end.
+
+Though what we want is a reward, after all this is a competition, but what we have learned from the process matters more. The ability outweigh anything. Thinking independently and finishing all codes by yourself, you can improve your comprehensive ability by doing so.
+
+**Using the template without your own thinking can not help you in any area**
+
+Though the fond-end is easy. But the some logical in `JS` and some animations or layouts in `CSS` also takes you some time. Some operation in `git` also enhance your feeling on database(just my opinion).  `Python` can be used in web worm and data process, which may stimulate your interest in computer engineering.  
+
+**All in all, this is a freshman friendly project**, because it do not have any data transmition. 
+
+![image-20220419100602171](https://raw.githubusercontent.com/RNCHEN/photo-326/master/blogImg/image-20220421164520157.png)
