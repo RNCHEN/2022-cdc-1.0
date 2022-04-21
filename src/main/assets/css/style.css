@@ -450,7 +450,7 @@ h6 {
     text-align: center;
     justify-content: center;
     flex-direction: column;
-    box-shadow: inset -5px 7px 8px 0 rgb(182, 176, 176);
+    box-shadow: inset -5px 6px 10px 0 rgb(236, 228, 228);
     flex-wrap: wrap;
 }
 
