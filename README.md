@@ -290,3 +290,4 @@ Though the fond-end is easy. But the some logical in `JS` and some animations or
 **All in all, this is a freshman friendly project**, because it do not have any data transmition. 
 
 ![image-20220419100602171](https://raw.githubusercontent.com/RNCHEN/photo-326/master/blogImg/image-20220421164520157.png)
+
