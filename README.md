@@ -26,6 +26,10 @@ you can use the website at
 
 https://rnchen.github.io/firstDeployment/
 
+you can find the reply video with the following link
+
+
+
 **However, because of some reasons, the desktop can use it normally while the loptop need to shrink it to 80% or less**
 
  you can start the main code with `0408Beta`->`main`->`fire.html` 

@@ -32,7 +32,7 @@
             <div class="left-title">
                 规划方向
             </div>
-            <a class="left-button left-button-point" href="./sp-sh-knowledge.html"><img src="../fonts/fonts/knowledge.svg" class="left-img"><span
+            <a class="left-button" href="./sp-sh-knowledge.html"><img src="../fonts/fonts/knowledge.svg" class="left-img"><span
                 class="label">知识产权</span></a>
         <a class="left-button" href="./sp-sh-CNmedicine.html"><img src="../fonts/fonts/sh-CNmedicine.svg" class="left-img"><span
                 class="label">中医药</span></a>
@@ -41,7 +41,7 @@
         </a>
         <a href="./sp-sh-weather.html" class="left-button"><img src="../fonts/fonts/enviroment.svg"
             class="left-img"><span class="label">气象服务保障</span></a>
-            <a href="./sp-sh-disabled.html" class="left-button"><img src="../fonts/fonts/disabled.svg"
+            <a href="./sp-sh-disabled.html" class="left-button left-button-point"><img src="../fonts/fonts/disabled.svg"
                 class="left-img"><span class="label">残疾人事业</span></a>
                 <a href="./sp-sh-city.html" class="left-button"><img src="../fonts/fonts/chengshi.svg"
                     class="left-img"><span class="label">城市管理精细化</span></a>
@@ -49,25 +49,26 @@
     </aside>
     <main class="right-box">
         <div class="right-top-box">
-            <h4 style="color:#012970">知识产权</h4>
+            <h4 style="color:#012970">残疾人事业</h4>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="#" class="bread-a">主页</a></li>
                   <li class="breadcrumb-item"><a href="#" class="bread-a">具体省份</a></li>
                   <li class="breadcrumb-item"><a href="#" class="bread-a">上海</a></li>
-                  <li class="breadcrumb-item active" aria-current="page" style="color:#51678f">知识产权</li>
+                  <li class="breadcrumb-item active" aria-current="page" style="color:#51678f">残疾人事业</li>
                 </ol>
             </nav>
             <div class="card-2">
                 <h4 class="top-card-title">
-                    知识产权
+                    残疾人事业
                     <span class="top-card-span">|上海</span>
                 </h4>
                 <p class="top-card-p">
-                    以习近平新时代中国特色社会主义思想为指导，全面贯彻党的十九大和十九届二中、三中、四中、五中、六中全会精神，
-深入贯彻习近平总书记考察上海重要讲话、在浦东开发开放30周年庆祝大会上的重要讲话精神和关于知识产权工作的重要指示精神，牢固树立新发展理念，
-坚持推动高质量发展，加快推动制度型开放、数字化转型，在部市合作框架下，高标准推进知识产权强市建设，加快打造国际知识产权保护高地，
-为上海加快建设具有世界影响力的社会主义现代化国际大都市提供强有力支撑，为建设中国特色、世界水平的知识产权强国作出新的更大贡献。
+                    以习近平新时代中国特色社会主义思想为指导，深入贯彻党的十九大和十九届二中、三中、四中、五中全会精神，把残疾人事业纳入
+经济社会发展大局，充分体现对残疾人“格外关心、格外关注”，以“平等、参与、共享”为发展理念，积极顺应残疾人对美好生活的新期待，
+在残疾人事业发展上体现城市温度。以推动残疾人事业高质量发展，实现残疾人群众高品质生活为主题，以建设“底线民生”“基本民生”“质量民生”为主线，
+以加强残疾人法治建设为保障，使残疾人工作在公共服务供给、残健融合发展等方面保持全国领先地位，
+全面提高残疾人事业治理能力和治理体系现代化水平，让发展成果更多、更公平、更广泛地惠及广大残疾人群众，促进残疾人全面发展和共同富裕。
                 </p>
             </div>
         </div>
@@ -98,60 +99,48 @@
         var option;
 
         option = {
-            color: ['#ADD8E6', '#4682B4','#BDB76B','#000080','#7ccd7c','#D8BFD8','#8B8878','#528B8B'],
+            color: ['#ADD8E6', '#4682B4', '#BDB76B', '#000080', '#7ccd7c', '#D8BFD8', '#8B8878', '#528B8B'],
             title: {
-                text: '知识产权发展指标'
+                text: '部分残疾人事业发展指标'
             },
-            legend: {
-                data: ['2020','2025']
+            radar: {
+                center: ['50%', '50%'],
+                radius: '60%',
+                // shape: 'circle',
+                indicator: [
+                    { name: '', max: 100 },
+                    { name: '残疾人城乡居民基本养老保险参保率', max: 100 },
+                    { name: '残疾人城乡居民基本医疗保险参保率', max: 100 },
+                    { name: '困难残疾人精准帮扶覆盖率', max: 100 },
+                    { name: '高中阶段残疾学生入学率', max: 100 },
+                    { name: '政府公众号和政务APP信息无障碍改造率', max: 100 },
+                    { name: '参与文化体育活动残疾人比例', max: 100 },
+                ]
             },
-            tooltip: { // 鼠标悬浮提示框显示 X和Y 轴数据
-                trigger: 'axis',
-                backgroundColor: 'rgba(32, 33, 36,.7)',
-                borderColor: 'rgba(32, 33, 36,0.20)',
-                borderWidth: 1,
-                textStyle: { // 文字提示样式
-                    color: '#fff',
-                    fontSize: '12'
-                },
-                axisPointer: { // 坐标轴虚线
-                    type: 'cross',
-                    label: {
-                        backgroundColor: '#6a7985'
-                    }
-                },
-            },
-            xAxis: {
-                data: ['海外发明专利授权量（百件）','每万人口高价值发明专利拥有量（件）' , '马德里商标国际注册申请量（百件）', 
-                '作品版权年登记量（万件）', '专利密集型产业增加值占GDP比重（%）', '	版权产业增加值占GDP比重（%）', 
-                '知识产权使用费年进出口总额（十亿元）','知识产权质押融资年登记金额（亿元）','知识产权民事一审案件服判息诉率（%）',
-                '执业专利代理师数量（百人）'],
-                axisLabel : {//坐标轴刻度标签的相关设置。
-                    interval:0,
-                    rotate:"30",
-                    fontSize: 9,
-                    fontFamily:'Microsoft YaHei'
-            }
-            },
-            yAxis: {},
             series: [
                 {
-                    name:'2020',
-                    type: 'bar',
-                    data: [31.14, 20, 0, 31.89, 17.41, 9, 62.4, 38, 0, 15.16]
-                },
-                {
-                    name:'2025',
-                    type: 'bar',
-                    data: [60, 30, 14, 45, 9, 9.9, 70, 100, 90, 21]
+                    name: '部分残疾人事业发展指标',
+                    type: 'radar',
+                    label: {
+                        show: true,
+                        color: "#0f58a2",
+                        fontSize: 12,
+                    },
+                    data: [
+                        {
+                            value: [95, 98, 95, 75, 60, 60],
+                            name: 'Allocated Budget'
+                        },
+                    ]
                 }
             ],
-            grid:{
-                  x:80,
-                  y:50,
-                  x2:50,
-                  y2:100,
-	       }
+            grid: {
+                top: '4%',
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                containLabel: true
+            }
         }
         option && myChart.setOption(option);
 
@@ -160,7 +149,7 @@
         var option2;
         option2 = {
             title: {
-                text: '知识产权发展方向'
+                text: '残疾人事业发展方向'
             },
             legend: {
                 top: 'bottom'
@@ -176,7 +165,7 @@
             },
             series: [
                 {
-                name: '知识产权发展指标',
+                name: '残疾人事业发展指标',
                 type: 'pie',
                 radius: [40, 180],
                 center: ['50%', '50%'],
@@ -185,16 +174,13 @@
                     borderRadius: 8
                 },
                 data: [
-                    { value: 40, name: '高价值发明专利拥有' },
-                    { value: 38, name: '海外发明专利授权' },
-                    { value: 32, name: '马德里商标国际注册申请' },
-                    { value: 30, name: '作品版权登记' },
-                    { value: 28, name: '专利密集型产业增加值' },
-                    { value: 26, name: '版权产业增加值' },
-                    { value: 22, name: '知识产权使用费' },
-                    { value: 18, name: '知识产权质押融资' },
-                    { value: 14, name: '知识产权民事案件' },
-                    { value: 10, name: '执业专利代理师数' },
+                    { value: 40, name: '收入' },
+                    { value: 38, name: '保险' },
+                    { value: 32, name: '就业' },
+                    { value: 30, name: '康复服务' },
+                    { value: 28, name: '教育' },
+                    { value: 26, name: '服务机构' },
+                    { value: 22, name: '困难帮扶' },
                 ]
                 }
             ]

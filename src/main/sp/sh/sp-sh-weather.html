@@ -36,10 +36,10 @@
                 class="label">知识产权</span></a>
         <a class="left-button" href="./sp-sh-CNmedicine.html"><img src="../fonts/fonts/sh-CNmedicine.svg" class="left-img"><span
                 class="label">中医药</span></a>
-        <a class="left-button left-button-point" href="./sp-sh-education.html"><img src="../fonts/fonts/sh-education.svg" class="left-img"><span
+        <a class="left-button" href="./sp-sh-education.html"><img src="../fonts/fonts/sh-education.svg" class="left-img"><span
                 class="label">教育</span>
         </a>
-        <a href="./sp-sh-weather.html" class="left-button"><img src="../fonts/fonts/enviroment.svg"
+        <a href="./sp-sh-weather.html" class="left-button left-button-point"><img src="../fonts/fonts/enviroment.svg"
             class="left-img"><span class="label">气象服务保障</span></a>
             <a href="./sp-sh-disabled.html" class="left-button"><img src="../fonts/fonts/disabled.svg"
                 class="left-img"><span class="label">残疾人事业</span></a>
@@ -49,27 +49,25 @@
     </aside>
     <main class="right-box">
         <div class="right-top-box">
-            <h4 style="color:#012970">教育</h4>
+            <h4 style="color:#012970">气象服务保障</h4>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="#" class="bread-a">主页</a></li>
                   <li class="breadcrumb-item"><a href="#" class="bread-a">具体省份</a></li>
                   <li class="breadcrumb-item"><a href="#" class="bread-a">上海</a></li>
-                  <li class="breadcrumb-item active" aria-current="page" style="color:#51678f">教育</li>
+                  <li class="breadcrumb-item active" aria-current="page" style="color:#51678f">气象服务保障</li>
                 </ol>
             </nav>
             <div class="card-2">
                 <h4 class="top-card-title">
-                    教育
+                    气象服务保障
                     <span class="top-card-span">|上海</span>
                 </h4>
                 <p class="top-card-p">
-                    以习近平新时代中国特色社会主义思想为指导，深入贯彻党的十九大和十九届二中、三中、四中、五中全会精神，
-全面落实习近平总书记关于教育的重要论述和全国教育大会精神，站在“教育是国之大计、党之大计”的战略高度，坚持教育优先发展，
-加强党对教育工作的全面领导，坚持为党育人、为国育才，围绕立德树人根本任务和教育高质量发展的主题，全面深化教育领域综合改革，
-更加关注每一个学生的终身发展，更加关注青少年身心健康，加强学生综合素养和把握未来的能力，构筑新阶段上海教育发展新战略优势，
-增强人民群众教育获得感和满意度，提高教育社会服务能级和贡献水平，为上海建设具有世界影响力的社会主义现代化国际大都市提供人才支撑、
-智力支持和创新引领。
+                    以习近平新时代中国特色社会主义思想为指导，全面贯彻党的十九大和十九届二中、三中、四中、五中全会精神，
+落实习近平总书记对气象工作的重要指示精神，加快科技创新，努力做到监测精密、预报精准、服务精细，
+发挥气象防灾减灾第一道防线作用。深化供给侧改革，对标国际最高标准最好水平，在服务上海经济社会发展中增加气象业务技术的深度，
+在服务国家战略中助力气象强国建设的广度，在参与国际气象合作中提升气象科技创新的高度。
                 </p>
             </div>
         </div>
@@ -100,61 +98,52 @@
         var option;
 
         option = {
-            color: ['#ADD8E6', '#4682B4','#BDB76B','#000080','#7ccd7c','#D8BFD8','#8B8878','#528B8B'],
+            color: ['#ADD8E6', '#4682B4', '#BDB76B', '#000080', '#7ccd7c', '#D8BFD8', '#8B8878', '#528B8B'],
             title: {
-                text: '教育发展指标'
+                text: '部分气象服务规划指标'
             },
-            legend: {
-                data: ['2020','2025']
+            radar: {
+                center: ['50%', '50%'],
+                radius: '60%',
+                // shape: 'circle',
+                indicator: [
+                    { name: '气象观测站网立体覆盖率', max: 100 },
+                    { name: '观测资料数值预报同化率', max: 100 },
+                    { name: '10天晴雨预报准确率', max: 100 },
+                    { name: '灾害性天气预警准确率', max: 100 },
+                    { name: '台风预报准确率', max: 100 },
+                    { name: '行政区划分区预警率', max: 100 },
+                    { name: '智慧气象服务城市网格覆盖率', max: 100 },
+                    { name: '气象服务公众覆盖率', max: 100 },
+                    { name: '智慧气象服务满意度', max: 100 },
+                    { name: '气象科普知识普及率', max: 100 },
+                    { name: '气象标准应用率', max: 100 },
+                ]
             },
-            tooltip: { // 鼠标悬浮提示框显示 X和Y 轴数据
-                trigger: 'axis',
-                backgroundColor: 'rgba(32, 33, 36,.7)',
-                borderColor: 'rgba(32, 33, 36,0.20)',
-                borderWidth: 1,
-                textStyle: { // 文字提示样式
-                    color: '#fff',
-                    fontSize: '12'
-                },
-                axisPointer: { // 坐标轴虚线
-                    type: 'cross',
-                    label: {
-                        backgroundColor: '#6a7985'
-                    }
-                },
-            },
-            xAxis: {
-                data: ['学前教育毛入园率','学前教育教师接受专业教育比例' , '九年义务教育巩固率', 
-                '残疾儿童义务教育阶段入学率', '残疾青少年高中阶段教育入学率', '	高中阶段毛入学率', 
-                '中小学生体质健康合格率','中小学生体育素养水平指数','职业教育“双师型”教师比例',
-                '劳动年龄人口受过高等教育的比例'],
-                axisLabel : {//坐标轴刻度标签的相关设置。
-                    interval:0,
-                    rotate:"30",
-                    fontSize: 9,
-                    fontFamily:'Microsoft YaHei'
-            }
-            },
-            yAxis: {},
             series: [
                 {
-                    name:'2020',
-                    type: 'bar',
-                    data: [99.0, 95.6, 99.9, 99.8, 70.5, 90.0, 97.2, 80.2, 60.15, 46.4]
-                },
-                {
-                    name:'2025',
-                    type: 'bar',
-                    data: [99.0, 98, 99.9, 99.8, 75, 90.0, 97.2, 82, 65, 50]
+                    name: '部分气象服务规划发展指标',
+                    type: 'radar',
+                    label: {
+                        show: true,
+                        color: "#0f58a2",
+                        fontSize: 12,
+                    },
+                    data: [
+                        {
+                            value: [80, 85, 85, 88, 88, 100, 100, 98, 90, 80, 95],
+                            name: 'Allocated Budget'
+                        },
+                    ]
                 }
             ],
-            grid:{
-                top: '6%',
+            grid: {
+                top: '4%',
                 left: '3%',
                 right: '4%',
-                bottom: '2%',
+                bottom: '3%',
                 containLabel: true
-	       }
+            }
         }
         option && myChart.setOption(option);
 
@@ -176,78 +165,97 @@
                     colorMappingBy: 'id',
                     data: [
                         {
-                            name: '学前教育',
+                            name: '监测精密综合观测能力',
                             id: 1,
                             value: 4,
                             children: [
                                 {
-                                    name: '学前教育毛入园率',
+                                    name: '气象观测站网立体覆盖率',
                                     value: 2,
                                     id: 1,
                                 },
                                 {
-                                    name: '学前教育教师接受专业教育比例',
-                                    value: 2,
+                                    name: '观测资料数值预报同化率',
+                                    value: 1,
                                     id: 1,
-                                }
+                                },
+                                {
+                                    name: '实况分析产品精密度',
+                                    value: 1,
+                                    id: 1,
+                                },
                             ]
                         },
                         {
-                            name: '九年义务教育',
-                            value: 3,
+                            name: '	预报精准天气预报能力',
+                            value: 4,
                             id: 2,
                             children: [
                                 {
-                                    name: '九年义务教育巩固率',
+                                    name: '区域数值预报准确率（24小时）',
                                     value: 2,
                                     id: 2,
                                 },
                                 {
-                                    name: '义务教育优质均衡区比例',
+                                    name: '灾害性天气预警准确率',
+                                    value: 1,
+                                    id: 2,
+                                },
+                                {
+                                    name: '台风预报准确率',
                                     value: 1,
                                     id: 2,
                                 },
                             ]
                         },
                         {
-                            name: '高中阶段教育',
-                            value: 2,
+                            name: '服务精细智慧服务能力',
+                            value: 6,
                             id: 3,
                             children: [
                                 {
-                                    name: '高中阶段毛入学率',
+                                    name: '行政区划分区预警率',
                                     value: 2,
+                                    id: 3,
+                                },
+                                {
+                                    name: '智慧气象赋能行业领域覆盖数',
+                                    value: 2,
+                                    id: 3,
+                                },
+                                {
+                                    name: '智慧气象服务城市网格覆盖率',
+                                    value: 1,
+                                    id: 3,
+                                },
+                                {
+                                    name: '气象服务公众覆盖率',
+                                    value: 1,
                                     id: 3,
                                 },
                             ]
                         }, {
-                            name: '高等教育',
+                            name: '综合实力',
                             value: 3,
                             id: 4,
                             children: [
                                 {
-                                    name: '每十万人口在校大学生数',
-                                    value: 2,
+                                    name: '高性能计算能力',
+                                    value: 1,
                                     id: 4,
                                 },
                                 {
-                                    name: '每十万人口在校研究生数',
+                                    name: '气象科普知识普及率',
+                                    value: 1,
+                                    id: 4,
+                                },
+                                {
+                                    name: '气象标准应用率',
                                     value: 1,
                                     id: 4,
                                 },
                             ]
-                        }, {
-                            name: '人力资源开发',
-                            value: 1,
-                            id: 5,
-                            children: [
-                                {
-                                    name: '劳动年龄人口受过高等教育的比例',
-                                    value: 1,
-                                    id: 5,
-                                },
-                            ]
-                        }
+                        },
                     ]
                 }
             ]
