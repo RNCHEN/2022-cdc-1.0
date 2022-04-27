@@ -3,14 +3,21 @@
 ## Something before the project
 
 My last words updated on the April 27th.
-	So, unfortunately, we even did not pass the first selection. And my passion for this project is shut down even though I know it is wrong. At least according to what I have known, a project, which has won a Nation's rewards, also shows no technical difficulty and any innovation while our project shows more innovation and imagination. Using Echarts and making some adjustment to the style, the project can be done by anyone who knows how to type the keyboard. 
-	I urged the relevant person in charge to find out why we failed even at the first selection. They said we could not show others' projects because they needed to keep the secret. We gained nothing essential or helpful in the reply. They said we chose five and you are the six. Come on. Any details? oh indeed they said we got 81 while is line in the 6 positions. What kind of details is this? 
-	I want a reason why our project failed. You can lie to me that we lack innovation, which is not correct. Or you can say you guys got a provincial reward last year so we give the opportunity to the next generation. You can make up a story.But I gained nothing. And the deadline for the application for the next selection is passed. I can do nothing more but write down this words. 
-	Indeed I feel frustrated but I won't lose my confidence. I learned a lot in the process. 
-	It is the first time that I urged a reward so eagerly, the first time I organized the whole project even it was a naive project, the first time we tried to use git to cooperate with my teammates though we failed, the first time I try to interpret my opinion into a realistic thing, the first time I meet questions and search for solutions though it should be done at the first year in the university and the first time I give all my efforts but gain nothing. 
-	Those valuable experiences may be more important than the certification of the competition. I won't stop my way that we should learn new things from the competition even though the final effect is not as fansinating as those who use the existed templates. Time will tell.
-	That's all.
-	oh, in addition, I'm sry that you will miss a nation-level reward.
+
+​	So, unfortunately, we even did not pass the first selection. And my passion for this project is shut down even though I know it is wrong. At least according to what I have known, a project, which has won a Nation's rewards, also shows no technical difficulty and any innovation while our project shows more innovation and imagination. Using Echarts and making some adjustment to the style, the project can be done by anyone who knows how to type the keyboard. 
+
+​	I urged the relevant person in charge to find out why we failed even at the first selection. They said we could not show others' projects because they needed to keep the secret. We gained nothing essential or helpful in the reply. They said we chose five and you are the six. Come on. Any details? oh indeed they said we got 81 while is line in the 6 positions. What kind of details is this? 
+
+​	I want a reason why our project failed. You can lie to me that we lack innovation, which is not correct. Or you can say you guys got a provincial reward last year so we give the opportunity to the next generation. You can make up a story.But I gained nothing. And the deadline for the application for the next selection is passed. I can do nothing more but write down this words. 
+
+​	Indeed I feel frustrated but I won't lose my confidence. I learned a lot in the process. 
+
+​	It is the first time that I urged a reward so eagerly, the first time I organized the whole project even it was a naive project, the first time we tried to use git to cooperate with my teammates though we failed, the first time I try to interpret my opinion into a realistic thing, the first time I meet questions and search for solutions though it should be done at the first year in the university and the first time I give all my efforts but gain nothing. 
+
+​	Those valuable experiences may be more important than the certification of the competition. I won't stop my way that we should learn new things from the competition even though the final effect is not as fansinating as those who use the existed templates. Time will tell.
+
+​	That's all.
+​	oh, in addition, I'm sry that you will miss a nation-level reward.
 
 
 
