@@ -1,5 +1,9 @@
 # 2022-Computer Design Competition
 
+you can use the website at 
+
+https://rnchen.github.io/firstDeployment/
+
 ## Something before the project
 
 My last words updated on the April 27th.
