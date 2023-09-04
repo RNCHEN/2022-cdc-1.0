@@ -4,6 +4,10 @@ you can use the website at
 
 https://rnchen.github.io/firstDeployment/
 
+you can also find a similar project at 
+
+https://rnchen.github.io/2021-cdc-display/
+
 ## Something before the project
 
 My last words updated on the April 27th.
